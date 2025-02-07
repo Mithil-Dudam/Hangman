@@ -109,7 +109,7 @@ function App() {
           <p>{gameOver === true? 
             <div>
               <p>{additionalMessage}</p>  
-              <button type="submit" className='text-black border-3 rounded-md bg-yellow-200 mt-2 mb-4 ' onClick={NewGame}>Play Again</button>
+              <button type="submit" className='text-black border-3 rounded-md bg-yellow-200 mt-2 mb-4 cursor-pointer' onClick={NewGame}>Play Again</button>
             </div> 
             : message||""}</p>
           <p className={`${error ? "border-red-300 outline-none border-3 mb-2":"" }`}>{error||""}</p>
